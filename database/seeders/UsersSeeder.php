@@ -6,7 +6,7 @@ use DB;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class UserSeeder extends Seeder
+class UsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -35,6 +35,6 @@ class UserSeeder extends Seeder
                 ];
         }
 
-        DB::table('user')->insert($users);
+        DB::table('users')->insert($users);
     }
 }
