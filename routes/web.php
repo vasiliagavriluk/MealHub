@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/users/{id}', [UsersController::class, 'index']);
+Route::get('/users/{id}', [UsersController::class, 'index'])->name('users.index');
 
 
 Route::get('/', function () {
